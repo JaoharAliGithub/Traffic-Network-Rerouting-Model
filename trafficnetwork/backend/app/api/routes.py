@@ -18,7 +18,7 @@ router = APIRouter()
 @router.post("/graph/load-sample")
 def load_sample_graph(rows: int = 5, cols: int = 5, agents: int = 50):
     """Load a sample grid graph for testing."""
-    from ..utils.graph_generator import generate_grid_graph, generate_random_agents
+    from utils.graph_generator import generate_grid_graph, generate_random_agents
 
     topology = generate_grid_graph(rows, cols)
     agent_list = generate_random_agents(len(topology.nodes), agents)
