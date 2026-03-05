@@ -12,7 +12,8 @@ app = FastAPI(
 # CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173", "https://something-j3twlh0l4-jaoharaligithubs-projects.vercel.app", "https://something-virid.vercel.app"],
+    allow_origins=["http://localhost:3000", "http://localhost:5173", "https://traffic-network-rerouting-git-4245a5-jaoharaligithubs-projects.vercel.app",
+                   "https://traffic-network-rerouting-model-benpk0byj.vercel.app",],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

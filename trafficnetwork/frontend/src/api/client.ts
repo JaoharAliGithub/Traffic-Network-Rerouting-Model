@@ -5,7 +5,7 @@ import type {
     SimulationMetrics 
   } from '../types/models';
   
-  const API_BASE = import.meta.env.VITE_API_URL;
+  const API_BASE = "https://traffic-network-rerouting-model.onrender.com/api";
   
   export async function loadGraph(topology: GraphTopology, agents: Agent[]) {
     const response = await fetch(`${API_BASE}/graph/load`, {
