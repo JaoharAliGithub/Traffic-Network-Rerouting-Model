@@ -1,7 +1,7 @@
 # app/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .api import routes
+from api import routes
 
 app = FastAPI(
     title="Traffic Network Simulator",
