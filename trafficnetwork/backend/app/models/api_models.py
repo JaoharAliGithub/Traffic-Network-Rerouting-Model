@@ -1,8 +1,8 @@
 # app/models/api_models.py
 from pydantic import BaseModel, Field
 from typing import List, Optional
-from .graph_models import Node, Edge, Agent, Route
-from .simulation_models import SimulationState, SimulationMetrics, GraphTopology
+from models.graph_models import Node, Edge, Agent, Route
+from models.simulation_models import SimulationState, SimulationMetrics, GraphTopology
 
 class LoadGraphRequest(BaseModel):
     """Request to load a new graph."""

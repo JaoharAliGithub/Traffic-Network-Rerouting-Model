@@ -1,7 +1,7 @@
 # app/core/simulation.py
 from typing import List, Dict
-from .graph import Graph
-from .metrics import MetricsCollector
+from core.graph import Graph
+from core.metrics import MetricsCollector
 from models.graph_models import Agent, Route
 from models.simulation_models import SimulationState, SimulationMetrics, \
     GraphTopology

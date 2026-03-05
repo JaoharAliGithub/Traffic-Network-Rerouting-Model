@@ -1,7 +1,7 @@
 # app/models/simulation_models.py
 from pydantic import BaseModel, Field
 from typing import Dict, List
-from .graph_models import Node, Edge, Agent, Route
+from models.graph_models import Node, Edge, Agent, Route
 
 class GraphTopology(BaseModel):
     """Complete graph definition."""

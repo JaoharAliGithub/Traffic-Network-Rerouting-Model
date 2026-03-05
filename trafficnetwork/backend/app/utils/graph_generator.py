@@ -2,8 +2,8 @@
 import random
 import math
 from typing import List, Tuple
-from ..models.graph_models import Node, Edge, Agent
-from ..models.simulation_models import GraphTopology
+from models.graph_models import Node, Edge, Agent
+from models.simulation_models import GraphTopology
 
 def generate_grid_graph(rows: int, cols: int) -> GraphTopology:
     """Generate a grid graph for testing."""
