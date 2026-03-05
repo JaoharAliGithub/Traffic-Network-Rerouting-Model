@@ -1,6 +1,6 @@
 # app/api/dependencies.py
 from typing import Optional
-from ..core.simulation import Simulator
+from core.simulation import Simulator
 
 # Global state (acceptable for this scope; consider Redis for production)
 _simulator: Optional[Simulator] = None

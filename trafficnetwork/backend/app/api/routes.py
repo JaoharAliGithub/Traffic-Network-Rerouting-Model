@@ -1,14 +1,14 @@
 # app/api/routes.py
 from fastapi import APIRouter, HTTPException, Depends
 from typing import Optional
-from ..models.api_models import (
+from models.api_models import (
     LoadGraphRequest, LoadGraphResponse,
     StepRequest, StepResponse,
     StateResponse, MetricsHistoryResponse,
     RouteQueryRequest, RouteQueryResponse
 )
-from ..core.simulation import Simulator
-from .dependencies import get_simulator, set_simulator
+from core.simulation import Simulator
+from api.dependencies import get_simulator, set_simulator
 
 from pydantic import BaseModel
 
